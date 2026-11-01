@@ -1,0 +1,191 @@
+<!--
+==========================================================
+FILE : Portfolio/pages/project-judol.html
+==========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YOLOv11 Gambling Website Detection | Jabir Anshari</title>
+
+    <link rel="stylesheet" href="../css/project.css">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+<header class="project-header">
+    <a href="../index.html" class="back-btn">
+        <i class='bx bx-arrow-back'></i> Back to Home
+    </a>
+</header>
+
+<!--================ HERO ================-->
+<section class="project-hero reveal">
+    <div class="project-left">
+        <span class="tag">Artificial Intelligence</span>
+        <h1>YOLOv11 Gambling Website Detection</h1>
+        <p>AI-powered desktop application capable of detecting gambling-related objects from website screenshots using Computer Vision and the YOLOv11 object detection model.</p>
+        <div class="project-info">
+            <div>
+                <h4>Role</h4>
+                <span>Full Stack Developer</span>
+            </div>
+            <div>
+                <h4>Platform</h4>
+                <span>Desktop App</span>
+            </div>
+            <div>
+                <h4>Status</h4>
+                <span>Completed 2026</span>
+            </div>
+        </div>
+    </div>
+    <div class="project-right">
+        <img src="../assets/projects/judol/cover.png" alt="YOLOv11 Detection">
+    </div>
+</section>
+
+    <!--================ OVERVIEW & PROBLEM ================-->
+<section class="project-overview reveal">
+    <h2>Project Overview</h2>
+    <p>
+        Proyek ini dikembangkan sebagai tugas akhir di program studi Teknik Komputer. 
+        Sistem ini bertujuan untuk mendeteksi elemen visual terkait perjudian dari screenshot website secara otomatis. 
+        Masalah utamanya adalah website perjudian online mendistribusikan banner promosi dalam berbagai bentuk dan warna, 
+        sehingga inspeksi manual menjadi tidak efisien. Solusinya adalah membangun aplikasi desktop yang mengintegrasikan 
+        Computer Vision dan Deep Learning untuk melakukan pengenalan objek secara otomatis.
+    </p>
+</section>
+
+<!--================ TECHNOLOGY STACK ================-->
+<section class="project-stack reveal">
+    <h2>Technology Stack</h2>
+    <div class="stack-grid">
+        <!-- Kotak 1 -->
+        <div class="stack-card">
+            <i class='bx bxl-python' style="font-size: 45px; color: var(--primary); margin-bottom: 15px;"></i>
+            <h3>Python</h3>
+            <p>Programming Language</p>
+        </div>
+        <!-- Kotak 2 -->
+        <div class="stack-card">
+            <i class='bx bx-brain' style="font-size: 45px; color: var(--primary); margin-bottom: 15px;"></i>
+            <h3>YOLOv11</h3>
+            <p>Object Detection Model</p>
+        </div>
+        <!-- Kotak 3 -->
+        <div class="stack-card">
+            <i class='bx bx-camera' style="font-size: 45px; color: var(--primary); margin-bottom: 15px;"></i>
+            <h3>OpenCV</h3>
+            <p>Image Processing</p>
+        </div>
+        <!-- Kotak 4 -->
+        <div class="stack-card">
+            <i class='bx bx-window-alt' style="font-size: 45px; color: var(--primary); margin-bottom: 15px;"></i>
+            <h3>PyQt5</h3>
+            <p>Desktop GUI Framework</p>
+        </div>
+        <!-- Kotak 5 -->
+        <div class="stack-card">
+            <i class='bx bx-screenshot' style="font-size: 45px; color: var(--primary); margin-bottom: 15px;"></i>
+            <h3>PyAutoGUI</h3>
+            <p>Screen Capture Automation</p>
+        </div>
+        <!-- Kotak 6 -->
+        <div class="stack-card">
+            <i class='bx bx-data' style="font-size: 45px; color: var(--primary); margin-bottom: 15px;"></i>
+            <h3>Roboflow</h3>
+            <p>Dataset Annotation</p>
+        </div>
+    </div>
+</section>
+
+<!--================ WORKFLOW (HTML MURNI) ================-->
+<section class="project-process reveal">
+    <h2>System Workflow</h2>
+    <div class="process-timeline">
+        <div class="process-item">
+            <h3>1. Data Collection & Annotation</h3>
+            <p>
+                Mengumpulkan dataset berupa screenshot dari berbagai website perjudian dan melakukan anotasi objek (bounding box) menggunakan platform Roboflow.
+            </p>
+        </div>
+        <div class="process-item">
+            <h3>2. Model Training (YOLOv11)</h3>
+            <p>
+                Melatih model deteksi objek YOLOv11 menggunakan dataset yang telah disiapkan melalui Google Colab untuk mengenali pola visual perjudian secara akurat.
+            </p>
+        </div>
+        <div class="process-item">
+            <h3>3. Automated Screen Capture</h3>
+            <p>
+                Aplikasi desktop menggunakan pustaka PyAutoGUI dan OpenCV untuk menangkap layar (screenshot) website yang sedang dibuka secara real-time.
+            </p>
+        </div>
+        <div class="process-item">
+            <h3>4. Detection & Visualization</h3>
+            <p>
+                Gambar hasil tangkapan layar diproses oleh model YOLOv11. Hasil deteksi (beserta confidence score) ditampilkan secara visual melalui antarmuka interaktif yang dibangun menggunakan PyQt5.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--================ RESULT / CONCLUSION ================-->
+<section class="project-conclusion reveal">
+    <h2>Results</h2>
+    <p>
+        Model YOLOv11 yang telah dilatih berhasil mendeteksi elemen visual terkait perjudian pada website. 
+        Aplikasi desktop ini memudahkan proses inspeksi dan pemantauan secara otomatis, konsisten, dan terukur 
+        melalui antarmuka grafis yang ramah pengguna.
+    </p>
+</section>
+
+<!--================ PROJECT NAVIGATION ================-->
+<section class="project-navigation reveal">
+    <!-- Tombol kembali ke project sebelumnya bisa diisi sesuai urutan -->
+    <a href="#" class="nav-card" style="visibility: hidden;">
+        <small>← Previous</small>
+        <h3>-</h3>
+    </a>
+    
+    <a href="project-desa.html" class="nav-card">
+        <small>Next Project →</small>
+        <h3>Website Profil Desa Pagar</h3>
+    </a>
+</section>
+
+<!--================ FOOTER ================-->
+<footer class="project-footer">
+    <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;">Jabir Anshari</h3>
+    <p>Computer Engineering Student • Artificial Intelligence • Computer Vision • Web Development</p>
+    
+    <div class="link-buttons" style="margin-top: 30px;">
+        <a href="../index.html" class="link-btn">
+            <i class='bx bx-home'></i> Back to Home
+        </a>
+        <a href="../index.html#projects" class="link-btn">
+            <i class='bx bx-layer'></i> View All Projects
+        </a>
+    </div>
+    
+    <p style="margin-top: 40px; font-size: 13px; opacity: 0.5;">
+        © 2026 Jabir Anshari. All Rights Reserved.
+    </p>
+</footer>
+
+    <script src="../js/project.js"></script>
+
+</body>
+
+</html>
